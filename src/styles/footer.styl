@@ -1,0 +1,66 @@
+
+.footer
+    .title
+        text-align: center
+        font-size: 2rem
+        color: #eef7f6
+        padding: 16px 0
+        font-weight: 600
+
+    .flex-container
+        display: flex
+        max-width: 800px
+        margin: auto
+        margin-top: 2rem
+        .left
+            position: relative
+            width: 40%
+            .avatar
+                width: 200px
+                position: absolute
+                right: 0
+                left: 0
+                margin: auto
+        .right
+            width: 60%
+            text-align: center
+            font-size: 1.5rem
+            color: #eef7f6
+            .svg-inline--fa
+                margin-right: 12px
+            .item
+                margin:8px 0
+            .profile-links
+                display: flex
+                flex-direction: row
+                flex-wrap: wrap
+                justify-content: space-around
+                align-items: center
+                align-content: space-around
+                margin: 28px auto
+                max-width: 450px
+                a
+                    color: #eef7f6
+                    font-size: 2.5rem
+
+@media (max-width: 600px)
+    .footer
+        .flex-container
+            .left
+                .avatar
+                    width: 130px
+
+@media (max-width: 425px)
+    .footer 
+        margin-top: 70px
+        .title
+            display: none
+        .flex-container
+            flex-direction: column
+        .left
+            width: 100% !important
+            height: 130px
+            .avatar
+                top: -25px
+        .right
+            width: 100% !important
